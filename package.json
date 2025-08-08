@@ -1,10 +1,10 @@
 {
   "name": "rub-runner-backend",
   "version": "1.0.0",
-  "main": "stripe-webhook.js",
-  "description": "Backend server for Rub Runner eCommerce site",
+  "description": "Unified backend for Rub Runner eCommerce site with Stripe checkout, webhook, email receipts, and product API",
+  "main": "server.js",
   "scripts": {
-    "start": "node stripe-webhook.js",
+    "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": [
@@ -17,13 +17,13 @@
   "author": "Rub Runner",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "stripe": "^14.10.0",
-    "dotenv": "^16.3.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "fs-extra": "^11.2.0",
     "nodemailer": "^6.9.8",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "stripe": "^14.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"

@@ -2,12 +2,30 @@
   "name": "rub-runner-backend",
   "version": "1.0.0",
   "main": "stripe-webhook.js",
+  "description": "Backend server for Rub Runner eCommerce site",
   "scripts": {
-    "start": "node stripe-webhook.js"
+    "start": "node stripe-webhook.js",
+    "dev": "nodemon server.js"
   },
+  "keywords": [
+    "bbq",
+    "rubs",
+    "seasonings",
+    "ecommerce",
+    "stripe"
+  ],
+  "author": "Rub Runner",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
-    "stripe": "^12.3.0",
-    "dotenv": "^16.0.3"
+    "stripe": "^14.10.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "fs-extra": "^11.2.0",
+    "nodemailer": "^6.9.8",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }

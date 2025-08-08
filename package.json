@@ -1,0 +1,13 @@
+{
+  "name": "rub-runner-backend",
+  "version": "1.0.0",
+  "main": "stripe-webhook.js",
+  "scripts": {
+    "start": "node stripe-webhook.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "stripe": "^12.3.0",
+    "dotenv": "^16.0.3"
+  }
+}
